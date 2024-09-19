@@ -3,5 +3,12 @@ def my_name(name):
     # import ipdb;ipdb.set_trace()
     return f"My name is: {name}"
 
-if __name__ == "__main__":
+
+def your_name(name):
+    """Greet someone else"""
+    return f"Nice to meet you, {name}"
+
+# https://stackoverflow.com/questions/65592626/how-to-test-if-name-main-to-increase-coverage
+
+if __name__ == "__main__": # pragma: no cover
     print(my_name("bob"))

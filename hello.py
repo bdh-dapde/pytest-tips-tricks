@@ -7,7 +7,7 @@ def more_goodbye():
     return "bye"
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     more_hello()
 
 # This is nonsense code that generates a warning

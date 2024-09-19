@@ -1,6 +1,6 @@
 import pytest
 
-from greeting import my_name
+from greeting import my_name, your_name
 
 @pytest.fixture
 def bob():
@@ -15,3 +15,6 @@ def test_bob(bob):
 
 def test_sally(sally):
     assert sally == my_name("sally")
+
+def test_bob2():
+    assert "Nice to meet you, bob"==your_name("bob")
