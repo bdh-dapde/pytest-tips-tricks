@@ -15,6 +15,6 @@ def make_change(amount):
             click.echo(click.style(f"{coin}: {num}", fg="green"))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     # pylint: disable=no-value-for-parameter
     make_change()

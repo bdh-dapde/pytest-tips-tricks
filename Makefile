@@ -3,8 +3,13 @@ install:
 	conda install -y --file requirements.txt
 
 test:
-	python -m pytest -vvv --cov=hello --cov=greeting \
-		--cov=smath --cov=web tests
+	python -m pytest -vvv \
+		--cov=hello \
+		--cov=greeting \
+		--cov=smath \
+		--cov=web \
+		--cov=cli \
+		tests
 	python -m pytest --nbval notebook.ipynb	#tests our jupyter notebook
 	#python -m pytest -v tests/test_web.py #if you just want to test web
 
