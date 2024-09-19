@@ -1,6 +1,6 @@
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	#pip install --upgrade pip && pip install -r requirements.txt
+	conda install -y --file requirements.txt
 
 test:
 	python -m pytest -vvv --cov=hello --cov=greeting \
