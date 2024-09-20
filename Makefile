@@ -17,6 +17,7 @@ debug:
 	python -m pytest -vv --pdb	#Debugger is invoked
 
 one-test:
+	# Is a test for one function only, so don't burn 20 min on whole thing
 	python -m pytest -vv tests/test_greeting.py::test_my_name4
 
 test-web:
